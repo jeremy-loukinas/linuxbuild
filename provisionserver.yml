@@ -8,11 +8,6 @@
     - name: Add Hosts to memory 
       add_host:
         name: "{{ servername }}"
-#        group: "{{ provisioned_vms }}
-
-#    - name: Run Post Provision tasks
-#      hosts: {{ provisioned_vms }}
-#      tasks:
 
     - name:
       include_role:
