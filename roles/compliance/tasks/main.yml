@@ -1,7 +1,5 @@
 ---
 
-- hosts: all
-  tasks:
 
     - name: Disable SSH Access via Empty Passwords
       lineinfile:
