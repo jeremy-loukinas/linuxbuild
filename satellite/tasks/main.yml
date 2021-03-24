@@ -1,0 +1,7 @@
+---
+
+- name: Register To Satellite
+  redhat_subscription:
+    state: present
+    activationkey: {{ satekey }}
+    org_id: "Default Organization"
