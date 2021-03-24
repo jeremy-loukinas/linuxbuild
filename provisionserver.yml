@@ -14,10 +14,16 @@
   hosts: {{ provisioned_vms }}
   tasks:
 
-    - include_role: 
-        name: compliance
-    - include_role:
-        name: satellite
-    - include_role:
-        name: patch
+- name:
+  include_role:
+     name: compliance
+
+- name:
+  include_role:
+     name: satellite
+
+- name: 
+  include_role:
+     name: patch
+
 
