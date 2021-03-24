@@ -16,3 +16,8 @@
 
     - include_role: 
         name: compliance
+    - include_role:
+        name: satellite
+    - include_role:
+        name: patch
+
