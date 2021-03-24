@@ -13,9 +13,9 @@
       include_role:
         name: compliance
 
-    - name:
-      include_role:
-        name: satellite
+#    - name:
+#      include_role:
+#        name: satellite
 
     - name: 
       include_role:
