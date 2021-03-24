@@ -10,20 +10,20 @@
         name: "{{ servername }}"
         group: "{{ provisioned_vms }}
 
-- name: Run Post Provision tasks
-  hosts: {{ provisioned_vms }}
-  tasks:
+    - name: Run Post Provision tasks
+      hosts: {{ provisioned_vms }}
+      tasks:
 
-- name:
-  include_role:
-     name: compliance
+    - name:
+      include_role:
+        name: compliance
 
-- name:
-  include_role:
-     name: satellite
+    - name:
+      include_role:
+        name: satellite
 
-- name: 
-  include_role:
-     name: patch
+    - name: 
+      include_role:
+        name: patch
 
 
