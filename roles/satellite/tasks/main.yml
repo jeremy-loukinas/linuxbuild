@@ -1,5 +1,11 @@
 ---
 
+- name: Download katello agent
+  command: "curl --insecure --output /var/tmp/katello-ca-consumer-latest.noarch.rpm https://192.168.200.60/pub/katello-ca-consumer-latest.noarch.rpm"
+
+- name: Install katello agent
+  command: "yum localinstall /var/tmp/katello-ca-consumer-latest.noarch.rpm"
+
 - name: Register To Satellite
   redhat_subscription:
     state: present
