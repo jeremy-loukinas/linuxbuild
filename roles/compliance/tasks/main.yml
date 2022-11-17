@@ -1,7 +1,7 @@
 ---
 
 
-    - name: Disable SSH Access via Empty Passwords
+    - name: Disable SSH Access via Empty Passwords for company xyz
       lineinfile:
         create: yes
         dest: /etc/ssh/sshd_config
